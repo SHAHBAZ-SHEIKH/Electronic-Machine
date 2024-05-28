@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.votingmain{
+    width: 50%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    border-radius: 10px;
+    
+}
+.votingdiv input{
+    width: 250px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #111;
+    color: #fff;
+}
+
+.votingdiv button{
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #E49B0F;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.votingdiv button:hover{
+    background-color: #fff;
+    color: #E49B0F;
+    font-weight: 600;
+}
+
+.votinglist{
+    margin-top: 20px;
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    
+    
+}
+#incre{
+    color: #E49B0F;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.detail2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#incre{
+    cursor: pointer;
+}
+.main-head{
+    margin-bottom: 10px;
+}
+.main-head h2{
+    color: #fafafa;
+}
+
+
+@media (max-width:800px){
+
+    .votinglist{
+        width: 50%;
+    }
+    .votingmain{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media (max-width:600px){
+
+    .votinglist{
+        width: 60%;
+    }
+    .votingmain{
+        width: 70%;
+        height: 70%;
+    }
+    .votingdiv input{
+        width: 200px;
+    }
+}
+
+@media (max-width:450px){
+
+    .votinglist{
+        width: 70%;
+    }
+    .votingmain{
+        width: 80%;
+        height: 80%;
+    }
+    .votingdiv input{
+        width: 190px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:370px){
+
+    .votinglist{
+        width: 90%;
+    }
+    .votingmain{
+        width: 95%;
+    }
+    .votingdiv input{
+        width: 170px;
+        font-size: 10px;
+        padding: 15px;
+    }
+    .votingdiv button{
+        padding: 15px;
+        font-weight: 300;
+    }
+}
+
